@@ -1,22 +1,25 @@
+import logo from '../../../public/Navbar/logo.png'
 import { Link } from 'react-router-dom'
 import styles from './Navbar.module.css'
 
 const Navbar = () => {
   return (
     <nav className={styles.navbar}>
-      <h1>Real Estate</h1>
+      <a className={styles.title} href="/">
+      <img src={logo} alt="Rent" className={styles.logo} />
+      </a>
       <ul>
         <li>
-          <Link>Home</Link>
+          <Link to="/Home">Home</Link>
         </li>
         <li>
-          <Link>About Us</Link>
+          <Link to="/About Us">About Us</Link>
         </li>
         <li>
-          <Link>Houses</Link>
+          <Link to="/Houses">Houses</Link>
         </li>
         <li>
-          <Link>Contact Us</Link>
+          <Link to="/Contact us">Contact Us</Link>
         </li>
       </ul>
     </nav> 
