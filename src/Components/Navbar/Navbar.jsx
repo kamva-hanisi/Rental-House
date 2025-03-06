@@ -1,5 +1,5 @@
-import logo from '../../../public/Navbar/logo.png'
-import { Link } from 'react-router-dom'
+import logo from '../../../public/Navbar/house-.png'
+import { NavLink } from 'react-router-dom'
 import styles from './Navbar.module.css'
 
 const Navbar = () => {
@@ -10,16 +10,16 @@ const Navbar = () => {
       </a>
       <ul>
         <li>
-          <Link to="/Home">Home</Link>
+          <NavLink to="/Home">Home</NavLink>
         </li>
         <li>
-          <Link to="/About Us">About Us</Link>
+          <NavLink to="/About Us">About Us</NavLink>
         </li>
         <li>
-          <Link to="/Houses">Houses</Link>
+          <NavLink to="/Houses">Houses</NavLink>
         </li>
         <li>
-          <Link to="/Contact us">Contact Us</Link>
+          <NavLink to="/Contact us">Contact Us</NavLink>
         </li>
       </ul>
     </nav> 
