@@ -6,7 +6,7 @@ import ContactUs from './Components/ContactUs/ContactUs'
 import AboutUs from './Components/AboutUs/AboutUs'
 import Slider from './Components/slider/slider';
 
-// import { slides } from './data/carouselData.json';
+import { slides } from './Components/Data/carouselData.json'
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <Route path='/Houses' element={<Houses />} />
         <Route path='/Contact us' element={<ContactUs />} />
       </Routes>
-      <Slider />
+      <Slider data={slides} />
     </div>
   )
 }
